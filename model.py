@@ -14,7 +14,7 @@ class CNN(nn.Module):
         super(CNN, self).__init__()
         self.conv1 = nn.Conv2d(1, 3, kernel_size=7, stride=2)#(11,11)
         self.relu1 = nn.ReLU()
-        self.conv2 = nn.Conv2d(3, 5, kernel_size=5, stride=1)#(3,3)
+        self.conv2 = nn.Conv2d(3, 5, kernel_size=5, stride=1)#(7,7)
         self.relu2 = nn.ReLU()
         self.conv3 = nn.Conv2d(5, 7, kernel_size=5)#(3,3)
         self.relu3 = nn.ReLU()
