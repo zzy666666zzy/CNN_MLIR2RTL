@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:conv_2D_FPGA.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:para_BN_W&amp;b_txt">
+   </FileRef>
+   <FileRef
+      location = "group:conv_2D_FPGA.hpp">
+   </FileRef>
+   <FileRef
+      location = "group:conv.hpp">
+   </FileRef>
+</Workspace>
