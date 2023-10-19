@@ -34,5 +34,5 @@ print(f'Actual digit: {test_label}')
 print(f'Predicted digit: {predicted_label}')
 
 # Save test_image_np as a .txt file
-np.savetxt('test_image.txt', test_image_np, fmt='%d', delimiter=',')
+np.savetxt('test_image.txt', test_image_np, fmt='%f', delimiter=',')
 
