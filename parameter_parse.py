@@ -12,7 +12,7 @@ np.set_printoptions(suppress=True)
 torch.set_printoptions(precision=7)
 
 #output bin
-out_bin=1
+out_bin=0
 
 np.set_printoptions(threshold=np.inf)
 model = CNN()

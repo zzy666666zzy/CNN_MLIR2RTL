@@ -18,7 +18,10 @@ test_dataset = MNIST(root='./data', train=False, transform=transform, download=T
 # Choose an image from the test dataset (you can change the index)
 test_image, test_label = test_dataset[0]  # Change the index as needed
 
-test_image_np = test_image.squeeze(0).numpy().reshape(784, 1)
+# test_image_np = test_image.squeeze(0).numpy().reshape(784, 1)
+
+test_image_np = test_image.squeeze(0).numpy().reshape(1, 784, order='F').transpose()
+
 
 # Make a prediction
 with torch.no_grad():
@@ -34,5 +37,7 @@ print(f'Actual digit: {test_label}')
 print(f'Predicted digit: {predicted_label}')
 
 # Save test_image_np as a .txt file
-np.savetxt('test_image.txt', test_image_np, fmt='%f', delimiter=',')
+np.savetxt('./para_BN_W&b_txt/test_image.hpp', test_image_np, fmt='%.6f,', delimiter=',')
+
+
 
